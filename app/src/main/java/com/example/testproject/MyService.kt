@@ -13,6 +13,7 @@ import android.support.v4.media.MediaBrowserCompat
 import android.support.v4.media.MediaMetadataCompat
 import android.support.v4.media.session.MediaSessionCompat
 import android.support.v4.media.session.PlaybackStateCompat
+import android.util.Log
 import android.widget.ImageView
 import androidx.annotation.RequiresApi
 import androidx.core.app.NotificationCompat
@@ -125,7 +126,8 @@ class MyService : MediaBrowserServiceCompat() {
             }
 
             override fun onError(e: Exception?) {
-                TODO("Not yet implemented")
+//                TODO("Not yet implemented")
+                Log.e("ERROR","ERRROR")
             }
         })
     }
